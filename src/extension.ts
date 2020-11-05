@@ -48,9 +48,12 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(test);
 	context.subscriptions.push(gitUpload);
+	context.subscriptions.push(gitInitialize)
 }
 
 // this method is called when your extension is deactivated
 export function deactivate() {
 	vscode.window.showWarningMessage("Remind is disabled");
 }
+
+// Repository Link: https://github.com/Shashank-Prasanna/Remind
